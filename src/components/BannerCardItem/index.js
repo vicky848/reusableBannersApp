@@ -7,11 +7,11 @@ const BannerCardItem = props => {
   const {headerText, description, className} = bannerList
 
   return (
-    <li className={`${className} "banner-card-container"`}>
+    <li className={className}>
       <div>
-        <h1 className="heading">{headerText}</h1>
-        <p className="para">{description}</p>
-        <button className="button-show" type="button">
+        <h1 className="card-heading">{headerText}</h1>
+        <p className="card-description">{description}</p>
+        <button type="button" className="button-show">
           Show More
         </button>
       </div>
